@@ -1,20 +1,19 @@
-//import './Reset.css'
-import './App.css';
-import './Styles.css';
-import Navbar from './components/Navbar';
-import Baner from './components/Baner';
-import SecondSection from './components/SecondSection';
-import ThirdSection from './components/ThirdSection';
-import Footer from './components/Footer';
+import "./App.css";
+import "./Styles.css";
+import Navbar from "./components/Navbar";
+import Baner from "./components/Baner";
+import SecondSection from "./components/SecondSection";
+import ThirdSection from "./components/ThirdSection";
+import Footer from "./components/Footer";
 
 function App() {
   return (
     <>
-    <Navbar />
-    <Baner />
-    <SecondSection idName={"about"}/>
-    <ThirdSection />
-    <Footer />
+      <Navbar />
+      <Baner />
+      <SecondSection idName={"about"} />
+      <ThirdSection />
+      <Footer />
     </>
   );
 }

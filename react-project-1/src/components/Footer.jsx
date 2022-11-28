@@ -1,6 +1,6 @@
 function Footer() {
-  return(
-<footer className="footer">
+  return (
+    <footer className="footer">
       <div class="contents">
         <p>Nazwa firmy - wszelkie prawa zastrzeżone, 2019</p>
         <div className="socialMedia">
@@ -9,8 +9,6 @@ function Footer() {
         </div>
       </div>
     </footer>
-
-  )
-  
-};
+  );
+}
 export default Footer;
