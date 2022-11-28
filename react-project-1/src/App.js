@@ -1,4 +1,6 @@
+//import './Reset.css'
 import './App.css';
+import './Styles.css';
 import Navbar from './components/Navbar';
 import Baner from './components/Baner';
 import SecondSection from './components/SecondSection';

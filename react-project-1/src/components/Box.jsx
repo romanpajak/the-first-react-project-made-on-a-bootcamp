@@ -1,8 +1,8 @@
 
-function Box({boxNumber}) {
+function Box({boxName}) {
     return(
     <div className="box">
-        <p>Usługa {boxNumber}</p>
+        <p>{boxName}</p>
     </div>
     )
 };

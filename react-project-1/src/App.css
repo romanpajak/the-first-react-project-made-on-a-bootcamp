@@ -6,6 +6,10 @@ html {
   scroll-behavior: smooth;
 }
 
+h1,
+h2 {
+  font-size: 25px;
+}
 .contents {
   max-width: 960px;
   margin: 0 auto;
@@ -29,6 +33,14 @@ html {
 .menu .contents a {
   text-decoration: none;
   color: white;
+}
+.menu .contents a:first-of-type {
+  margin-right: auto;
+}
+
+.menu .contents :not(a:nth-of-type(1)) {
+  visibility: hidden;
+  margin-left: 10px;
 }
 
 /*baner styles*/
@@ -74,6 +86,10 @@ html {
   transition: 1s;
 }
 /* second section styles */
+#about,
+#offer {
+  text-align: center;
+}
 .secondSection {
   width: 100%;
   height: auto;
@@ -87,6 +103,7 @@ html {
   border: 1px solid #405d78;
   border-radius: 100%;
   background-size: cover;
+  margin: 0 auto;
 }
 .photo.firstImage {
   background-image: url(/images/face1.png);
@@ -95,11 +112,13 @@ html {
   background-image: url(/images/face2.png);
 }
 .workers {
+  display: block;
   margin: 20px 0;
 }
 .subtitle {
   font-weight: bold;
   margin-bottom: 10px;
+  margin: 15px 0;
 }
 /* third section styles */
 .thirdSection {
@@ -111,6 +130,13 @@ html {
   color: white;
   margin: 40px 0;
 }
+.boxContainer {
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .box {
   background: #f1f1f1;
   height: 198px;
@@ -127,6 +153,10 @@ html {
   width: auto;
   display: block;
 }
+
+.textContainer:first-child{
+  text-align: center;
+}
 .box:hover {
   transform: scale(1.05);
   transition: 0.5s;
@@ -139,8 +169,8 @@ html {
   position: relative;
   background: #e07a64;
   border-radius: 100%;
-  top: -100px;
-  left: -134px;
+  top: -98px;
+  left: -130px;
 }
 .text-smaller {
   font-size: smaller;
@@ -157,8 +187,18 @@ html {
   color: white;
   margin-bottom: 0;
 }
+
 .footer i {
   margin-left: 10px;
+}
+
+.footer .contents {
+  display: block;
+}
+
+.footer .contents p {
+  text-align: center;
+  margin: 10px 0;
 }
 
 .fa.fa-facebook-square.fa-2x,
@@ -166,50 +206,13 @@ html {
   color: white;
 }
 
-@media screen and (min-width: 200px) {
-  h1,
-  h2 {
-    font-size: 25px;
-  }
-  #about,
-  #offer {
-    text-align: center;
-  }
-  .menu .contents a:first-of-type {
-    margin-right: auto;
-  }
-
-  .menu .contents :not(a:nth-of-type(1)) {
-    visibility: hidden;
-  }
-  .photo {
-    margin: 0 auto;
-  }
-  .description p {
-    text-align: justify;
-  }
-  .subtitle {
-    margin: 15px 0;
-  }
-  .boxContainer {
-    width: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .footer .contents {
-    display: block;
-  }
-  .footer .contents p {
-    text-align: center;
-    margin: 10px 0;
-  }
-  .socialMedia {
-    display: flex;
-    justify-content: center;
-    margin: 10px 0;
-  }
+.socialMedia {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
 }
+
+
 @media screen and (min-width: 580px) {
   h1,
   h2 {
@@ -225,7 +228,7 @@ html {
     margin: 0 auto;
   }
   .description {
-    max-width: 540px;
+    /* max-width: 540px; */
     margin: 0 auto;
   }
 }

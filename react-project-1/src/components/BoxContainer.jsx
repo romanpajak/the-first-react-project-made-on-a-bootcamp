@@ -1,12 +1,12 @@
 import Box from "./Box";
 import BoxDistincted from "./BoxDistincted";
 function BoxContainer(){
-    const numbers=[1,2,3,4,5,6];
-    let listItems = numbers.map((number) =>{
-    if (number===1){
-    return <BoxDistincted />
+    const services=["Usługa","Usługa 2","Usługa 3","Usługa 4","Usługa 5","Usługa 6"];
+    let listItems = services.map((name) =>{
+    if (name==="Usługa"){
+    return <BoxDistincted boxName={name}/>
   }else{
-    return <Box distinction={true} boxNumber={number}/>
+    return <Box distinction={true} boxName={name}/>
   }
     }
     );
