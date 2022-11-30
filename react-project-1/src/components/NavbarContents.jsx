@@ -1,10 +1,10 @@
 function NavbarContents() {
   return (
     <>
-      <a href="#">Moja firma</a>
+      <a href="#about">Moja firma</a>
       <a href="#about">o nas</a>
       <a href="#offer">oferta</a>
-      <a href="#">kontakt</a>
+      <a href="#about">kontakt</a>
     </>
   );
 }
