@@ -1,6 +1,7 @@
 /*general styles*/
 body {
   font-family: "Roboto";
+  margin: 0;
 }
 html {
   scroll-behavior: smooth;

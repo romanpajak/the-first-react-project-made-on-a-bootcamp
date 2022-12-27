@@ -11,7 +11,7 @@ function App() {
     <>
       <Navbar />
       <Baner />
-      <SecondSection idName={"about"} />
+      <SecondSection />
       <ThirdSection />
       <Footer />
     </>
