@@ -1,16 +1,12 @@
 function Box({ isNew, boxName }) {
-  return isNew ? (
+  return (
     <div className="box">
-      <div className="textContainer">
-        <p>{boxName}</p>
-        <p className="text-smaller">(nowość)</p>
-        <div className="circle"></div>
-      </div>
-    </div>
-  ) : (
-    <div className="box">
+    <div className="textContainer">
       <p>{boxName}</p>
+      {isNew && <p className="text-smaller">(nowość)</p>} 
+      {isNew && <div className="circle"></div>}
     </div>
+  </div>
   );
 }
 export default Box;
